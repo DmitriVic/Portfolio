@@ -1,0 +1,9 @@
+.mainBlock{
+	display:grid;
+	width: 100%;
+	max-width: 920px;
+	height:100vh ;
+	/* align-items: center; */
+	text-align: center;
+	/* padding-top: 250px; */
+}

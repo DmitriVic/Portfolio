@@ -1,0 +1,35 @@
+.wrapper {
+	position: relative;
+  perspective: 1px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.parallax-layer{
+	position: absolute;
+  inset: 0;   
+  height: 100%;
+}
+.parallax-image {
+   transform: translateZ(0);
+   object-fit: cover;
+}
+
+.parallax-text {
+	font-size: 72px;
+	color: #cde4f7;
+	transform: translateZ(-2px) scale(2);
+	
+	
+}
+
+@media (max-width:768px) {
+	.parallax-text {
+		font-size: 62px;
+		transform: translateZ(-2px) translateX(20px) translateY(300px) scale(3);
+		}
+}

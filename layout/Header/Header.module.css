@@ -1,0 +1,14 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	background: none;
+	width: 100%;
+	z-index: 1;
+}
+.wrapper :last-child {
+	/* justify-self: end; */
+	/* grid-column: 3/4; */
+}
+
+
+
