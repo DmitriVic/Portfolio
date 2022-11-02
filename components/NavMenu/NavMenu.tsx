@@ -1,7 +1,3 @@
-// import s from './Button.module.css'
-// import { ButtonProps } from './Button.props'
-// import cn from 'classnames'
-// import ArrowIcon from './arrow.svg';
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {
 // 	return (
@@ -17,12 +13,25 @@
 // 			})}>
 // 				<ArrowIcon />
 // 			</span>}
-			
+
 // 	</button>)
 // }
+import s from './NavMenu.module.css'
+import cn from 'classnames'
+import { NavMenuprops } from './NavMenu.props';
 
+export const NavMenu = ({ className,setState, state,setModalActive}: NavMenuprops): JSX.Element => {
+	function f1() {
+		setModalActive(true)	
+	}
 
-export const NavMenu = ({  }): JSX.Element => {
-	return <></>
+	return (
+
+		<div className={className}>
+			<p className={cn(s.block, { [s.active]: state })}>
+				<span onClick={f1}>Нажми Меня</span>
+			</p>
+		</div>
+	)
 }
 

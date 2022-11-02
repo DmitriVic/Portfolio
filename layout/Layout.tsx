@@ -15,15 +15,15 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 		<>
 			<div className={s.wrapper}>
 				{/* <TextComponent/> */}
-				<Header className={s.header} />
+				<Header className={s.header} setModalActive={setModalActive} />
 				<Main className={s.main} />
 				<Footer className={s.footer} />
-				{/* <button onClick={() => setModalActive(a => !a)}>sss</button>
+				{/* <button onClick={() => setModalActive(a => !a)}>sss</button> */}
         <Modal
           modalActive={modalActive}
           setModalActive={setModalActive}>
 				 <button onClick={() => setModalActive(a => !a)}>sss</button>
-		  </Modal> */}
+		  </Modal>
 			</div>
 		</>
 	);

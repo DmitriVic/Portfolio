@@ -1,9 +1,11 @@
+import { DetailedHTMLProps, Dispatch, HTMLAttributes, SetStateAction } from 'react';
+import { ReactNode } from 'react';
 // example
 
 // import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 
-// export interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-// 	children: ReactNode;
-// 	appearance: 'primary' | 'ghost';
-// 	arrow?: 'right' | 'down' | 'none';
-// }
+export interface NavMenuprops extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+	state: boolean;
+	setState: any;
+	setModalActive: Dispatch<SetStateAction<boolean>>
+}

@@ -24,7 +24,7 @@
 
 export const AboutMe = ({  }): JSX.Element => {
 	return <>
-	<div>sssaaadddd</div>
+	<div>Обо мне</div>
 
 	</>
 }

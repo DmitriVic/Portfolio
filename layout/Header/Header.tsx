@@ -3,14 +3,24 @@ import s from './Header.module.css'
 import cn from 'classnames';
 
 import { Logo } from '../../components/Logo/Logo';
+import { NavMenu } from '../../components/NavMenu/NavMenu';
+import { useState } from 'react';
 
-export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
-	
+export const Header = ({ className, setModalActive , ...props }: HeaderProps): JSX.Element => {
+	const [state, setState] = useState<boolean>(false)
 	
 	return (
 		<div className={cn(className, s.wrapper)} {...props}>
-			<Logo/>
-			
+			<Logo 
+			state={state}
+			 setState={setState}/>
+			<div></div>
+			<NavMenu 
+			state={state}
+			 setState={setState} 
+			 setModalActive={setModalActive}
+			 />
+
 
 			
 	

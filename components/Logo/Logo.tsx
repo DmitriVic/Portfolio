@@ -24,11 +24,9 @@
  
  import cn from 'classnames'
 import { LogoProps } from './Logo.props'
-import { useState } from 'react'
 import LogoIcon from './logo.svg'
 
-export const Logo = ({ className }:LogoProps): JSX.Element => {
-	const [state, setState] = useState<boolean>(false)
+export const Logo = ({ className, state, setState }:LogoProps): JSX.Element => {
 	setTimeout(() => {
 		setState(true)
 	}, 500);
