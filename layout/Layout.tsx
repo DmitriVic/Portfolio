@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 		<>
 			<div className={s.wrapper}>
 				{/* <TextComponent/> */}
-				{/* <Header className={s.header} /> */}
+				<Header className={s.header} />
 				<Main className={s.main} />
 				<Footer className={s.footer} />
 				{/* <button onClick={() => setModalActive(a => !a)}>sss</button>

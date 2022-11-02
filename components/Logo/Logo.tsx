@@ -1,8 +1,5 @@
-// import s from './Button.module.css'
-// import { ButtonProps } from './Button.props'
-// import cn from 'classnames'
+
 // import ArrowIcon from './arrow.svg';
-import LogoIcon from './logo.svg'
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {
 // 	return (
@@ -28,8 +25,9 @@ import LogoIcon from './logo.svg'
  import cn from 'classnames'
 import { LogoProps } from './Logo.props'
 import { useState } from 'react'
+import LogoIcon from './logo.svg'
 
-export const Logo = ({ className, }:LogoProps): JSX.Element => {
+export const Logo = ({ className }:LogoProps): JSX.Element => {
 	const [state, setState] = useState<boolean>(false)
 	setTimeout(() => {
 		setState(true)

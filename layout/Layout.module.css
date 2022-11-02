@@ -1,5 +1,5 @@
 .wrapper {
-	/* position: relative;
+	position: relative;
 	font-size: 40px;
 	display: grid;
 	grid-template-columns: auto minmax(320px, 1440px) auto;
@@ -9,7 +9,7 @@
 	". main ."
 	" . footer . ";
 	grid-template-rows: auto 1fr auto;
-	min-height: 100vh; */
+	min-height: 100vh;
 }
 
 .header{
