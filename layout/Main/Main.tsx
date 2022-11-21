@@ -8,6 +8,7 @@ import { MainProps } from "./Main.props";
 import cn from "classnames";
 import { MainBlock } from "../../components/MainBlock/MainBlock";
 import { AboutMe } from "../../components/AboutMe/AboutMe";
+import { Resume } from "../../components/Resume/Resume";
 //import { format } from 'date-fns';
 
 // interface dataMonthProps {
@@ -30,6 +31,7 @@ export const Main = ({ ...props }: MainProps): JSX.Element => {
 		</MainBlock>
       <Video />
 		<AboutMe/>
+		<Resume/>
 	
     </main>
   );

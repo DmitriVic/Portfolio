@@ -1,0 +1,8 @@
+.resume{
+	background: rgb(48, 123, 194);
+	width: 100%;
+}
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
