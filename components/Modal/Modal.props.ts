@@ -14,6 +14,6 @@ import { DetailedHTMLProps, Dispatch, HTMLAttributes, ReactNode, SetStateAction 
 export interface ModalProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
 	children: ReactNode
 	modalActive: boolean
-	setModalActive?: Dispatch<SetStateAction<boolean>>
+	setModalActive: Dispatch<SetStateAction<boolean>>
 
 }
