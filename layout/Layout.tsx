@@ -6,6 +6,7 @@ import { LayoutProps } from "./Layout.props";
 import { FunctionComponent, useState } from "react";
 import { Modal } from "../components/Modal/Modal";
 import { TextComponent } from "../components/TextComponent/TextComponent";
+import { ModalMenu } from "../components/ModalMenu/ModalMenu";
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
 	const [modalActive, setModalActive] = useState<boolean>(false);
@@ -16,13 +17,18 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 			<div className={s.wrapper}>
 				{/* <TextComponent/> */}
 				<Header className={s.header} setModalActive={setModalActive} />
-				<Main className={s.main} />
+				<Main className={s.main} onScroll={()=> console.log('ssss')
+				}/>
 				<Footer className={s.footer} />
 				{/* <button onClick={() => setModalActive(a => !a)}>sss</button> */}
         <Modal
           modalActive={modalActive}
           setModalActive={setModalActive}>
-				 <button onClick={() => setModalActive(a => !a)}>sss</button>
+				 
+				 <ModalMenu 
+				 modalActive={modalActive}
+				 setModalActive={setModalActive}
+				 />
 		  </Modal>
 			</div>
 		</>

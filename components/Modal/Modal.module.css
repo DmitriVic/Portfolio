@@ -1,10 +1,10 @@
-.modal{
+.modal {
 	display: grid;
 	justify-items: center;
 	align-items: center;
 	grid-template-columns: 1fr;
-	position:fixed;
-	top:0;
+	position: fixed;
+	top: 0;
 	left: 0;
 	z-index: 1000;
 	background: rgba(153, 149, 149, 0.5);
@@ -15,19 +15,66 @@
 	z-index: 100;
 }
 
-.modalWrapper{
-	width: 400px;
-	height: 400px;
+.modalWrapper {
+	
 	margin: 0 5px;
 	padding: 20px;
 	border-radius: 12px;
-	background: #fff;
+	overflow: hidden;
 	transform: scale(0.5);
-	transition:  0.7s all;
-}
+	transition: 0.7s all;
+	 
+		/* position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0; */
 
-.active{
+		 
+		background: linear-gradient(#dead45, #e38ab8);
+	 }
+	 .modalWrapper:after {
+		display: block;
+		z-index: -1;
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		content: "";
+		background: linear-gradient(#54c9c2, #b0dea6);
+		animation: fade 10s ease-in-out infinite alternate; 
+	 }
+	 @keyframes fade {
+		0% {
+		  opacity: 0;
+		}
+	 
+		100% {
+		  opacity: 1;  
+		}
+	 }
+
+.active {
 	opacity: 1;
 	transform: scale(1);
 	pointer-events: inherit;
+}
+
+.cross {
+	z-index: 1000;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 35px;
+}
+.cross:before,
+.cross:after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 4px;
+	background: gray;
+}
+.cross:before {
+	transform: rotate(45deg);
+}
+.cross:after {
+	transform: rotate(-45deg);
 }

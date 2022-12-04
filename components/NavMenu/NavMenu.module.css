@@ -1,4 +1,8 @@
-
+@media (max-width:1024px) {
+	.navWrapper   {
+		display: none;
+	}
+}
 
 .block{
 	display: grid;
@@ -11,10 +15,22 @@
 .block > span{
 	
 	color: rgb(20, 44, 4);
-	font-weight: 700;
+	
 }
 
 .active{
 	right: 0;
 	transition: all 1s ease;
+}
+
+.nav{
+	font-size: 20px;
+	font-weight: 500;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 60px;
+}
+
+.nav li {
+	display: inline-block;
 }

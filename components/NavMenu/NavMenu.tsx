@@ -19,18 +19,19 @@
 import s from './NavMenu.module.css'
 import cn from 'classnames'
 import { NavMenuprops } from './NavMenu.props';
+import { ModalMenu } from '../ModalMenu/ModalMenu';
 
-export const NavMenu = ({ className,setState, state,setModalActive}: NavMenuprops): JSX.Element => {
-	function f1() {
-		setModalActive(true)	
-	}
+export const NavMenu = ({ }: NavMenuprops): JSX.Element => {
+	
 
 	return (
 
-		<div className={className}>
-			<p className={cn(s.block, { [s.active]: state })}>
-				<span onClick={f1}>Нажми Меня</span>
-			</p>
+		<div className={s.navWrapper}>
+			<ul className={s.nav}>
+			<li><a href="#" >Главная</a></li>
+				<li><a href="#AboutMe" >Обо мне</a></li>
+				<li><a href="#Resume" >Резюме</a></li>
+			</ul>
 		</div>
 	)
 }

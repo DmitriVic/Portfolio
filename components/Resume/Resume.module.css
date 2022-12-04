@@ -2,7 +2,26 @@
 	background: rgb(48, 123, 194);
 	width: 100%;
 }
+.resume p {
+	margin: 0;
+	padding: 0;
+}
 .skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.boxProgress {
+	width: 99%;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	font-size: 16px;
+	
+	
+}
+
+.skillsProgres{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }

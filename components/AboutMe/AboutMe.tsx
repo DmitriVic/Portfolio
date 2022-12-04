@@ -46,7 +46,7 @@ export const AboutMe = ({ }: AboutMeprops): JSX.Element => {
 	
 
 	return <>
-		<div className={s.wrapper}>
+		<div id='AboutMe' className={s.wrapper}>
 
 			<div className={s.title}>Обо мне</div>
 			<div>

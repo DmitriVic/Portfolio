@@ -2,7 +2,7 @@
 import s from './Modal.module.css'
 import cn from 'classnames'
 // import { ButtonProps } from './Button.props'
- 
+
 // import ArrowIcon from './arrow.svg';
 
 import { ModalProps } from "./Modal.props"
@@ -21,7 +21,7 @@ import { ModalProps } from "./Modal.props"
 // 			})}>
 // 				<ArrowIcon />
 // 			</span>}
-			
+
 // 	</button>)
 // }
 
@@ -31,17 +31,18 @@ import { ModalProps } from "./Modal.props"
 // }
 
 
-export function Modal ({children, modalActive, setModalActive}: ModalProps): JSX.Element {
+export function Modal({ children, modalActive, setModalActive }: ModalProps): JSX.Element {
 	console.log(modalActive);
 	return (
-		<div 
-		className={cn (s.modal,{[s.active]: modalActive})}
-		onClick={()=> setModalActive(false)}
+		<div
+			className={cn(s.modal, { [s.active]: modalActive })}
+			onClick={() => setModalActive(false)}
 		>
-			<div className={cn(s.modalWrapper, {[s.active]: modalActive})}
-			onClick={(e) => e.stopPropagation()}
+			<div className={cn(s.modalWrapper, { [s.active]: modalActive })}
+				onClick={(e) => e.stopPropagation()}
 			>
-			{children}
+				<div className={s.cross} onClick={() => setModalActive(a => !a)}></div>
+				{children}
 			</div>
 		</div>
 	)

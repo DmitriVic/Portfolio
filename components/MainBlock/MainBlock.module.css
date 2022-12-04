@@ -2,7 +2,7 @@
 	display:grid;
 	width: 100%;
 	max-width: 920px;
-	height:calc(100vh - 134px);
+	height:calc(100vh - 54px);
 	/* align-items: center; */
 	text-align: center;
 	padding-top: 250px;

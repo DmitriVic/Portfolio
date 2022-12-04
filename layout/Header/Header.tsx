@@ -5,6 +5,7 @@ import cn from 'classnames';
 import { Logo } from '../../components/Logo/Logo';
 import { NavMenu } from '../../components/NavMenu/NavMenu';
 import { useState } from 'react';
+import { Burger } from '../../components/Burger/Burger';
 
 export const Header = ({ className, setModalActive , ...props }: HeaderProps): JSX.Element => {
 	const [state, setState] = useState<boolean>(false)
@@ -16,10 +17,16 @@ export const Header = ({ className, setModalActive , ...props }: HeaderProps): J
 			 setState={setState}/>
 			<div></div>
 			<NavMenu 
-			state={state}
-			 setState={setState} 
-			 setModalActive={setModalActive}
+			// state={state}
+			//  setState={setState} 
+			//  setModalActive={setModalActive}
 			 />
+			 <Burger
+			  state={state}
+			  setState={setState} 
+			  setModalActive={setModalActive}
+			 />
+
 
 
 			

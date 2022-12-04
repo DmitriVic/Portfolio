@@ -26,6 +26,9 @@ export const Video = ({}: VideoProps): JSX.Element => {
   return (
     <>
       <video className={s.bg} src={path} autoPlay muted loop />
+      {/* <video className={s.bg} src='https://www.youtube.com/watch?v=0VJba-kk0oo&list=PLsErSZfBtknanL2rj3-CQ6-HtONiqaQpo&index=3' />  */}
+		
+
     </>
   );
 };

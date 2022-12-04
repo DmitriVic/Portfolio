@@ -23,6 +23,10 @@
 
 
 export const шаблон = ({  }): JSX.Element => {
-	return <></>
+	return (
+		<>
+			
+		</>
+	)
 }
 
