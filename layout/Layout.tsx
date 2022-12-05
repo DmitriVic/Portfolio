@@ -16,7 +16,10 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 		<>
 			<div className={s.wrapper}>
 				{/* <TextComponent/> */}
-				<Header className={s.header} setModalActive={setModalActive} />
+				<Header 
+				className={s.header} 
+				modalActive={modalActive}
+				setModalActive={setModalActive} />
 				<Main className={s.main} onScroll={()=> console.log('ssss')
 				}/>
 				<Footer className={s.footer} />

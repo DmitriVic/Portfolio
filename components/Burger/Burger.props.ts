@@ -5,6 +5,7 @@ import { ReactNode } from 'react';
 // import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 
 export interface Burgerprops extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+	modalActive: boolean;
 	state: boolean;
 	setState: any;
 	setModalActive: Dispatch<SetStateAction<boolean>>
