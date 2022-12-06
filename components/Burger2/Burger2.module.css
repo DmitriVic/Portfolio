@@ -6,10 +6,9 @@
 	right: 0;
 	transition: all 1s ease;
 }
-.Burger {
+.Burger2 {
 	position: relative;
 	z-index: 1000;
-	
 }
 
 .block{
@@ -18,14 +17,9 @@
 	
 }
 @media (min-width:1024px) {
-	.Burger   {
+	.Burger2   {
 		display: none;
 	}
-}
-
-.iconBurger {
-	
-	
 }
 
 
