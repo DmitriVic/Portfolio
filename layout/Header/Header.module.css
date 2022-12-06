@@ -1,21 +1,19 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: auto auto auto;
+	align-items: center;
 	background: none;
 	width: 100%;
 	z-index: 1;
-	align-items: center;
-
 }
 
-.wrapper :nth-child(4){
-	
+@media (max-width: 350px) {
+	.wrapper {
+		max-width: 300px;
+	}
 }
-	/* justify-self: end; */
-	/* grid-column: 3/4; */
-	
-
-
-
-
-
+.wrapper :nth-child(4) {
+	justify-self: end;
+}
+/* justify-self: end; */
+/* grid-column: 3/4; */

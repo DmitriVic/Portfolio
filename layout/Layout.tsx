@@ -20,8 +20,9 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 				className={s.header} 
 				modalActive={modalActive}
 				setModalActive={setModalActive} />
-				<Main className={s.main} onScroll={()=> console.log('ssss')
-				}/>
+				<Main 
+				className={s.main} 
+				/>
 				<Footer className={s.footer} />
 				{/* <button onClick={() => setModalActive(a => !a)}>sss</button> */}
         <Modal

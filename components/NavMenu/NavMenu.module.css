@@ -24,11 +24,12 @@
 }
 
 .nav{
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: calc( (100vw - 480px)/(1920 - 480) * (30 - 16) + 16px);
 	font-weight: 500;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 60px;
+	color: var(--dark-green);
 }
 
 .nav li {

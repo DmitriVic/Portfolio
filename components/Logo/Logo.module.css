@@ -10,10 +10,18 @@
 	gap: 20px;
 	position: relative;
 	left: -1000%;
+	align-items: center;
+}
+@media (max-width:350px) {
+	.block{
+
+		gap: 10px;
+		
+	}
 }
 .block > span{
 	
-	color: rgb(20, 44, 4);
+	color: var(--dark-green);
 	font-weight: 700;
 }
 

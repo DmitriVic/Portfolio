@@ -32,6 +32,7 @@ export const Burger = ({ modalActive, setState, state, setModalActive }: Burgerp
 			<div onClick={f1} className={cn(s.block, { [s.active]: modalActive })}>
 				<div>
 					<IconBurger className={s.iconBurger}/>
+					
 				</div>
 			</div>
 		</div>

@@ -1,8 +1,9 @@
 .wrapper {
-	position: relative;
-	font-size: 40px;
+	/* position: relative; */
+	/* font-size: 40px; */
+	font-size: calc( (100vw - 320px)/(1920 - 320) * (40 - 16) + 16px);
 	display: grid;
-	grid-template-columns: auto minmax(320px, 1440px) auto;
+	grid-template-columns: auto minmax(250px, 1440px) auto;
 	padding: 0 15px;
 	grid-template-areas: 
 	". header ."

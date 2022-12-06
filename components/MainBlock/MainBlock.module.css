@@ -6,4 +6,10 @@
 	/* align-items: center; */
 	text-align: center;
 	padding-top: 250px;
+	font-weight: 500;
 }
+/* @media (max-width:350px) {
+	.mainBlock{
+		max-width: 280px;
+	}
+} */
