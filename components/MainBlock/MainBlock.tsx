@@ -2,7 +2,7 @@
   import cn from 'classnames'
 // import ArrowIcon from './arrow.svg';
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MainBlockProps } from './MainBlock.props';
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {
@@ -24,8 +24,17 @@ import { MainBlockProps } from './MainBlock.props';
 // }
 
 
-export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
+export const MainBlock = ({setMainBlockHeight, children }: MainBlockProps): JSX.Element => {
 	const [stateText, setStateText] = useState<string>('')
+	const mainBlockHeight = useRef<HTMLDivElement>(null)
+	
+	
+	useEffect(() => {
+		setMainBlockHeight(mainBlockHeight.current?.offsetHeight)
+	}, [])
+	
+
+
 	const text = children;
 	let count: number = 3000
 	if (stateText.length > 0) {
@@ -40,7 +49,7 @@ export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
 	  }
 
 	return (
-	<div className={s.mainBlock}>
+	<div ref={mainBlockHeight} className={s.mainBlock}>
 	{stateText}
 	</div>
 	)

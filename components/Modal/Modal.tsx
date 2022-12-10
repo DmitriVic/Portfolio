@@ -32,7 +32,6 @@ import { ModalProps } from "./Modal.props"
 
 
 export function Modal({ children, modalActive, setModalActive }: ModalProps): JSX.Element {
-	console.log(modalActive);
 	return (
 		<div
 			className={cn(s.modal, { [s.active]: modalActive })}
@@ -41,8 +40,13 @@ export function Modal({ children, modalActive, setModalActive }: ModalProps): JS
 			<div className={cn(s.modalWrapper, { [s.active]: modalActive })}
 				onClick={(e) => e.stopPropagation()}
 			>
+				<div className={s.modalBody}>
+					<div className={s['more-snow']}>
+					{children}
+					</div>
+				</div>
 				<div className={s.cross} onClick={() => setModalActive(a => !a)}></div>
-				{children}
+				
 			</div>
 		</div>
 	)

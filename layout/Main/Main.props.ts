@@ -1,3 +1,5 @@
-import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { DetailedHTMLProps, HTMLAttributes, Dispatch, SetStateAction } from 'react';
 
-export interface MainProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> { }
+export interface MainProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+	setMainBlockHeight: Dispatch<SetStateAction<number | undefined>>
+ }

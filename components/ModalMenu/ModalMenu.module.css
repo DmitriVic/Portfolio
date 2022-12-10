@@ -1,7 +1,7 @@
 .ModalMenu{
 	z-index: 2000;
 	display: grid;
-	gap: 20px;
-	padding: 6vw;
+	gap: 30px;
+	padding: 10vw;
 	color: rgb(20, 44, 4);
 }

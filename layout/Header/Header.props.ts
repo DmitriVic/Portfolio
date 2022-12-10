@@ -3,4 +3,5 @@ import { DetailedHTMLProps, Dispatch, HTMLAttributes, SetStateAction } from 'rea
 export interface HeaderProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> { 
 	modalActive: boolean;
 	setModalActive: Dispatch<SetStateAction<boolean>>
+	mainBlockHeight: number | undefined;
 }

@@ -15,16 +15,6 @@ export const Burger = ({ modalActive, setState, state, setModalActive }: Burgerp
 	}
 
 
-	//  useEffect(() => {
-	// 	//const navContainer = document.querySelector('.bar')
-	// 	//console.log(document.querySelector(`.${s['nav-container']}`));
-	// 	$(`.${s['toggle-icon']}`).click(function() {
-	// 		$(`.${s['nav-container']}`).toggleClass(`${s.pushed}`);
-	// 	 });
-
-	//  }, [])
-	//console.log(s.active);
-	console.log(state);
 
 	return (
 

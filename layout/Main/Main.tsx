@@ -16,7 +16,7 @@ import { Resume } from "../../components/Resume/Resume";
 // }
 
 
-export const Main = ({ ...props }: MainProps): JSX.Element => {
+export const Main = ({setMainBlockHeight, ...props }: MainProps): JSX.Element => {
    
 	
 	
@@ -26,7 +26,9 @@ export const Main = ({ ...props }: MainProps): JSX.Element => {
  
   return (
     <main className={s.main} {...props}>
-		<MainBlock>
+		<MainBlock
+		setMainBlockHeight={setMainBlockHeight}
+		>
 		Всем привет меня зовут Дмитрий, добро пожаловать в мое портфолио. В верхнем правом углу вы найдете меню навигации по сайту. Хорошего настроения :)
 		</MainBlock>
       <Video />

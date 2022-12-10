@@ -25,9 +25,6 @@ import Foto from './фото на резуме.jpg'
 // }
 // var now = new Date()
 //console.log(new Date().getFullYear() - 1984);
-console.log(new Date().setTime(40));
-
-
 
 
 export const AboutMe = ({ }: AboutMeprops): JSX.Element => {
@@ -49,8 +46,8 @@ export const AboutMe = ({ }: AboutMeprops): JSX.Element => {
 		<div id='AboutMe' className={s.wrapper}>
 
 			<div className={s.title}>Обо мне</div>
-			<div>
-				<Image
+			<div className={s.imges}>
+				<Image 
 					src={Foto}
 					className={s.img}
 					alt=''

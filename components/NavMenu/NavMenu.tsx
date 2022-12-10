@@ -21,12 +21,12 @@ import cn from 'classnames'
 import { NavMenuprops } from './NavMenu.props';
 import { ModalMenu } from '../ModalMenu/ModalMenu';
 
-export const NavMenu = ({ }: NavMenuprops): JSX.Element => {
+export const NavMenu = ({state }: NavMenuprops): JSX.Element => {
 	
 
 	return (
 
-		<div className={s.navWrapper}>
+		<div className={cn(s.navWrapper, {[s.active]:state})}>
 			<ul className={s.nav}>
 			<li><a href="#" >Главная</a></li>
 				<li><a href="#AboutMe" >Обо мне</a></li>

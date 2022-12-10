@@ -38,7 +38,7 @@ export const Resume = ({ }): JSX.Element => {
 	// }, 50);
 	
 	if (typeof window !== 'undefined') {
-		console.log('You are on the browser')
+		//console.log('You are on the browser')
 		// ✅ Can use window here
 		window.addEventListener('scroll', function() {
 			//console.log(pageYOffset);
@@ -52,7 +52,7 @@ export const Resume = ({ }): JSX.Element => {
 		
 		
 	 } else {
-		console.log('You are on the server')
+		//console.log('You are on the server')
 		// ⛔️ Don't use window here
 	 }
 	

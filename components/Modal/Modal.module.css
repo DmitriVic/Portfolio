@@ -23,33 +23,11 @@
 	overflow: hidden;
 	transform: scale(0.5);
 	transition: 0.7s all;
-	 
-		/* position: absolute;
-		top: 0; bottom: 0;
-		left: 0; right: 0; */
+	background: url('./modalMenuBgWinter.jpg');
+	background-size: cover;
+	 }
+	
 
-		 
-		background: linear-gradient(#dead45, #e38ab8);
-	 }
-	 .modalWrapper:after {
-		display: block;
-		z-index: -1;
-		position: absolute;
-		top: 0; bottom: 0;
-		left: 0; right: 0;
-		content: "";
-		background: linear-gradient(#54c9c2, #b0dea6);
-		animation: fade 10s ease-in-out infinite alternate; 
-	 }
-	 @keyframes fade {
-		0% {
-		  opacity: 0;
-		}
-	 
-		100% {
-		  opacity: 1;  
-		}
-	 }
 
 .active {
 	opacity: 1;

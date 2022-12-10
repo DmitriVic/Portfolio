@@ -1,16 +1,13 @@
-@media (max-width:1024px) {
-	.navWrapper   {
-		display: none;
-	}
-}
 
-.block{
-	display: grid;
-	grid-template-columns: auto 1fr;
-	gap: 20px;
+
+.navWrapper{
 	position: relative;
 	right: -1000%;
-	cursor:pointer;
+	
+	/* display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
+	cursor:pointer; */
 }
 .block > span{
 	
@@ -34,4 +31,11 @@
 
 .nav li {
 	display: inline-block;
+}
+
+
+@media (max-width:1024px) {
+	.navWrapper   {
+		display: none;
+	}
 }

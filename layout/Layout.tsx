@@ -10,6 +10,9 @@ import { ModalMenu } from "../components/ModalMenu/ModalMenu";
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
 	const [modalActive, setModalActive] = useState<boolean>(false);
+	const [mainBlockHeight, setMainBlockHeight] = useState<number | undefined>(0);
+
+
 	//   console.log(typeof setModalActive);
 
 	return (
@@ -19,9 +22,12 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 				<Header 
 				className={s.header} 
 				modalActive={modalActive}
-				setModalActive={setModalActive} />
+				setModalActive={setModalActive}
+				mainBlockHeight={mainBlockHeight}
+				 />
 				<Main 
 				className={s.main} 
+				setMainBlockHeight={setMainBlockHeight}
 				/>
 				<Footer className={s.footer} />
 				{/* <button onClick={() => setModalActive(a => !a)}>sss</button> */}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
 * {
 	padding: 0px;
 	margin: 0px;
@@ -8,9 +10,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	 scroll-behavior: smooth;
+	 scroll-behavior: smooth; */
+	 font-family: 'Roboto', sans-serif;
 }
 
 ul li {
@@ -26,6 +29,8 @@ a {
 }
 :root {
 	--dark-green: rgb(20, 44, 4);
+	--title: 'Rubik Gemstones', cursive;
+	
  }
 
 
