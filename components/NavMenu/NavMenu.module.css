@@ -25,6 +25,7 @@
 	font-size: calc( (100vw - 480px)/(1920 - 480) * (30 - 16) + 16px);
 	font-weight: 500;
 	display: grid;
+	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	color: var(--dark-green);
 }

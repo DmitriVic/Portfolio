@@ -2,20 +2,24 @@
 
 .wrapper {
 	display: grid;
+	padding-left: 50px;
+	padding-right: 50px;
 	grid-template-columns: auto auto auto;
 	align-items: center;
 	background: none;
 	width: 100%;
 	z-index: 1;
-	position: sticky;
+	position: fixed;
 	top: 0;
+	right: 0;
 	transition: all 1s;
 	font-family: var(--title)
 }
 
-@media (max-width: 350px) {
+@media (max-width: 768px) {
 	.wrapper {
-		max-width: 300px;
+		padding-left: 10px;
+	padding-right: 10px;
 	}
 }
 .wrapper :nth-child(4) {

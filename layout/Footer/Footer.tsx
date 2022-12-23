@@ -7,7 +7,39 @@ import s from './Footer.module.css';
 export const Footer = ({...props }: FooterProps): JSX.Element => {
 	return (
 		<footer {...props}>
-			<div>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
+			<div className={s.footer}>Footer</div>
 		</footer>
 	);
 };

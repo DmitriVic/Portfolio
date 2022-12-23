@@ -9,6 +9,8 @@ import cn from "classnames";
 import { MainBlock } from "../../components/MainBlock/MainBlock";
 import { AboutMe } from "../../components/AboutMe/AboutMe";
 import { Resume } from "../../components/Resume/Resume";
+import { AboutMe2 } from "../../components/AboutMe2/AboutMe2";
+import MyComponent from "../../components/MyComponent/MyComponent";
 //import { format } from 'date-fns';
 
 // interface dataMonthProps {
@@ -32,9 +34,12 @@ export const Main = ({setMainBlockHeight, ...props }: MainProps): JSX.Element =>
 		Всем привет меня зовут Дмитрий, добро пожаловать в мое портфолио. В верхнем правом углу вы найдете меню навигации по сайту. Хорошего настроения :)
 		</MainBlock>
       <Video />
-		<AboutMe/>
+		{/* <div style={{height: '30px'}}></div> */}
+		<AboutMe />
+		{/* <div style={{height: '30px'}}></div> */}
+		{/* <AboutMe2/> */}
 		<Resume/>
-	
+		<MyComponent/>
     </main>
   );
 };
