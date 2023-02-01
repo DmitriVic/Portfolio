@@ -1,0 +1,12 @@
+
+.main{
+	position: relative;
+	perspective: 1px;
+	
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+
+	
+}
+

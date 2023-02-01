@@ -1,0 +1,44 @@
+
+
+.navWrapper{
+	position: relative;
+	right: -1000%;
+	
+	/* display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
+	cursor:pointer; */
+}
+.block > span{
+	
+	color: rgb(20, 44, 4);
+	
+}
+
+.active{
+	right: 0;
+	transition: all 1s ease;
+}
+
+.nav{
+	/* font-size: 20px; */
+	font-size: calc( (100vw - 480px)/(1920 - 480) * (24 - 16) + 16px);
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	/* display: grid;
+	grid-template-columns: repeat( 5, auto); */
+	color: var(--dark-green);
+}
+
+.nav li {
+	display: inline-block;
+}
+
+
+@media (max-width:1224px) {
+	.navWrapper   {
+		display: none;
+	}
+}

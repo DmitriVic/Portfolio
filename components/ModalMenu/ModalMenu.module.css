@@ -1,0 +1,8 @@
+.ModalMenu{
+	text-align: center;
+	z-index: 2000;
+	display: grid;
+	gap: 30px;
+	padding: 10vw;
+	color: rgb(20, 44, 4);
+}

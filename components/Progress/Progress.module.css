@@ -1,0 +1,51 @@
+.wrapper{
+	display:grid;
+	width: 100%;
+	gap: 5px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	
+	
+}
+
+.count{
+	
+	font-size: var(--title-fz);
+	font-style: normal;
+}
+/* ::WebkitProgressValue { background: #0063a6; }  */
+/* .progress::-webkit-progress-bar {
+	background: #0063a6;
+ } */
+/* .progress {
+	height: 10px;
+	width: 100%;
+	border-radius: 5px;
+	 overflow: hidden; 
+	color: rgba(255,0,0,0.1);
+} */
+.wrapper progress {
+	height: 10px;
+	width: 100%;
+	min-width: 160px;
+	border-radius: 5px;
+	 overflow: hidden; 
+	color: rgba(255,0,0,0.1);
+ }
+
+.html{
+	font-size: var(--title-fz);
+}
+
+.orange{
+	color: #F77B38;
+}
+.blue{
+	color: #2AB8E3;
+}
+.yellow{
+color: #F7CE33 ;	
+}
+.purple{
+color: #9D56BD;
+}
