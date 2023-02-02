@@ -1,5 +1,4 @@
 import s from './Resume.module.css'
-import 'animate.css';
 //import { ResumeProps } from './Resume.props'
 //import cn from 'classnames'
 
