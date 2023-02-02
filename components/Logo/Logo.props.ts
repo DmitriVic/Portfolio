@@ -1,4 +1,4 @@
-import { ReactNode, HTMLAttributes, DetailedHTMLProps } from 'react';
+import {  HTMLAttributes, DetailedHTMLProps } from 'react';
 // example
 
 // import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';

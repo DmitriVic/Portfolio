@@ -1,6 +1,6 @@
 // example
 
- import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
+ import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export interface ContactsProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	// children: ReactNode;

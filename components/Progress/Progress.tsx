@@ -1,5 +1,5 @@
-import classNames from 'classnames';
-import { useEffect, useRef, useState } from 'react';
+
+import {  useState } from 'react';
 import s from './Progress.module.css'
 import { Progressprops } from './Progress.props';
 //import { Progress } from './Progress.props'

@@ -19,7 +19,6 @@
 import s from './NavMenu.module.css'
 import cn from 'classnames'
 import { NavMenuprops } from './NavMenu.props';
-import { ModalMenu } from '../ModalMenu/ModalMenu';
 
 export const NavMenu = ({state }: NavMenuprops): JSX.Element => {
 	

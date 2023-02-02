@@ -1,7 +1,7 @@
 import { HTMLAttributes, Dispatch, SetStateAction } from 'react';
 // example
 
-import {  DetailedHTMLProps, ReactNode } from 'react';
+import {  DetailedHTMLProps} from 'react';
 
 export interface ModalMenuProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
 	modalActive: boolean

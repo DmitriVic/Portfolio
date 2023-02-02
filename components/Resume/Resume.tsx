@@ -2,10 +2,9 @@ import s from './Resume.module.css'
 import 'animate.css';
 //import { ResumeProps } from './Resume.props'
 //import cn from 'classnames'
-import Card from '../Card/Card'
-import { P } from '../P/P'
+
+
 import { useEffect, useRef, useState } from 'react';
-import ProgressBar from "@ramonak/react-progress-bar";
 import { Progress } from '../Progress/Progress';
 // import ArrowIcon from './arrow.svg';
 

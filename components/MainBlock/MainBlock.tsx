@@ -1,8 +1,7 @@
  import s from './MainBlock.module.css'
-  import cn from 'classnames'
 // import ArrowIcon from './arrow.svg';
 
-import { useEffect, useRef, useState } from "react";
+import {   useState } from "react";
 import { MainBlockProps } from './MainBlock.props';
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {
@@ -24,7 +23,7 @@ import { MainBlockProps } from './MainBlock.props';
 // }
 
 
-export const MainBlock = ({setMainBlockHeight, children }: MainBlockProps): JSX.Element => {
+export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
 	const [stateText, setStateText] = useState<string>('')
 	// const mainBlockHeight = useRef<HTMLDivElement>(null)
 	

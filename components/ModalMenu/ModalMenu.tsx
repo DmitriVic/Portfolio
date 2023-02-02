@@ -1,6 +1,6 @@
  import s from './ModalMenu.module.css'
 import { ModalMenuProps } from './ModalMenu.props'
- import cn from 'classnames'
+
 // import ArrowIcon from './arrow.svg';
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {

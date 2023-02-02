@@ -1,5 +1,4 @@
 import { DetailedHTMLProps, Dispatch, HTMLAttributes, SetStateAction } from 'react';
-import { ReactNode } from 'react';
 // example
 
 // import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';

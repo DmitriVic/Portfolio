@@ -28,7 +28,6 @@ export const FormCustom = ({ }: FormCustomProps): JSX.Element => {
 	const [phone, setPhone] = useState("");
 	const [message, setMessage] = useState("");
 	const [messenger, setMessenger] = useState("");
-	const [submitted, setSubmitted] = useState(false);
 	const [errorPhone, setErrorPhone] = useState("");
 	const [errorName, setErrorName] = useState("");
 	const [errorMessenger, setErrorMessenger] = useState("");
@@ -97,7 +96,7 @@ export const FormCustom = ({ }: FormCustomProps): JSX.Element => {
 				console.log(res.status);
 				if (res.status === 200) {
 					console.log("Response succeeded!");
-					setSubmitted(true);
+				
 					setName("");
 					setPhone("");
 					setMessenger("");
