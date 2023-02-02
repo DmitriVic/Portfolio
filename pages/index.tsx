@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 import { withLayout } from "../layout/Layout";
-import s from "../styles/Home.module.css";
 
- function Home({  ...props }): JSX.Element {
+
+ function Home({   }): JSX.Element {
 	return (
 		<>
 			<Head>

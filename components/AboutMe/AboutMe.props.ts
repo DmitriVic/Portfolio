@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 // example
 
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
+import { DetailedHTMLProps, HTMLAttributes  } from "react";
 
 // import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 
