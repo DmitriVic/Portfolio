@@ -4,13 +4,13 @@ import cn from 'classnames';
 
 import { Logo } from '../../components/Logo/Logo';
 import { NavMenu } from '../../components/NavMenu/NavMenu';
-import { RefObject, useContext, useEffect, useRef, useState } from 'react';
+import {  useContext, useEffect, useRef, useState } from 'react';
 import { Burger } from '../../components/Burger/Burger';
-import { Burger2 } from '../../components/Burger2/Burger2';
+
 import { ContextBgHeader } from "../../components/context/context";
 
 
-export const Header = ({ setChangeModal,mainBlockHeight,className, modalActive, setModalActive, ...props }: HeaderProps): JSX.Element => {
+export const Header = ({ setChangeModal,className, modalActive, setModalActive, ...props }: HeaderProps): JSX.Element => {
 	const [state, setState] = useState<boolean>(false)
 	const [show, setShow] = useState<boolean>(false);
 	const [bgHeader, setBgHeader] = useState<boolean>(false);

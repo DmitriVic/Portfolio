@@ -3,14 +3,13 @@ import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
 import { Footer } from "./Footer/Footer";
 import { LayoutProps } from "./Layout.props";
-import { createContext, FunctionComponent, useRef, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import { Modal } from "../components/Modal/Modal";
 import { ModalMenu } from "../components/ModalMenu/ModalMenu";
-import { create } from "domain";
+
 import { ContextBgHeader } from "../components/context/context";
-import { ChakraProvider } from '@chakra-ui/react'
 import { ModalInfoSite } from "../components/ModalInfoSite";
-const Layout = ({ children }: LayoutProps): JSX.Element => {
+const Layout = ({  }: LayoutProps): JSX.Element => {
 	//const ref = useRef<HTMLDivElement>()
 	const [upBlockAboutme, setUpBlockAboutme] = useState<number | undefined>(0)
 	const [modalActive, setModalActive] = useState<boolean>(false);
