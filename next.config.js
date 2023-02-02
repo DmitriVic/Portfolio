@@ -17,8 +17,8 @@ module.exports = {
 	},
 	images: {
 		domains: ['habrastorage.org'],
-		loader: 'custom',
-    	loaderFile: './my/image/loader.js',
+		// loader: 'custom',
+    	// loaderFile: './my/image/loader.js',
 		// unoptimized: true,
 	 },
 	 
