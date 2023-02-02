@@ -17,7 +17,7 @@ module.exports = {
 	},
 	images: {
 		domains: ['habrastorage.org'],
-		unoptimized: true,
+		// unoptimized: true,
 	 },
 	 
  };
