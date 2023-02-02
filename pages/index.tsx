@@ -1,7 +1,5 @@
 import Head from "next/head";
-
 import { withLayout } from "../layout/Layout";
-
 
  function Home({   }): JSX.Element {
 	return (
