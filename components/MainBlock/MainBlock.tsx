@@ -1,7 +1,7 @@
  import s from './MainBlock.module.css'
 // import ArrowIcon from './arrow.svg';
 
-import {   useState } from "react";
+import {   useEffect, useState } from "react";
 import { MainBlockProps } from './MainBlock.props';
 
 // export const Button = ({ appearance, arrow = 'none',  children, className, ...props }: ButtonProps): JSX.Element => {
@@ -25,16 +25,9 @@ import { MainBlockProps } from './MainBlock.props';
 
 export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
 	const [stateText, setStateText] = useState<string>('')
-	// const mainBlockHeight = useRef<HTMLDivElement>(null)
-	
-	
-	// useEffect(() => {
-	// 	setMainBlockHeight(mainBlockHeight.current?.offsetHeight)
-	// }, [])
-	
 
-
-
+	
+useEffect(() => {
 	const text = children;
 	let count: number = 2000
 	if (stateText.length > 0) {
@@ -47,6 +40,8 @@ export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
 		if (stateText.length === text?.length) {
 		  clearTimeout(TimeId)	
 	  }
+	
+}, [stateText])
 
 	return (
 	<div  className={s.mainBlock}>
