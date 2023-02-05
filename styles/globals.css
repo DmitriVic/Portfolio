@@ -50,7 +50,8 @@ a {
 @media (max-width:1024px) {
 	.swiper-button-prev  {
 		left: 10px !important;
-		
+		bottom: 10px !important;	
+
   }
  .swiper-button-next {
 	right: 10px !important;

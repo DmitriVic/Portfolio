@@ -1,6 +1,7 @@
 .bg{
 	position: absolute;
 	/* transform: translateZ(0); */
+	background: url('http://rsloboda-rt.ru/images/uploads/news/2019/10/9/e999fcab4eef1955984d8ec8948ffdfb.jpg');
 	inset: 0;
 	height: 100vh;
 	width: 100%;

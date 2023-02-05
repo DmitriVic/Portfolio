@@ -35,5 +35,5 @@
 		  else
 			 console.log(info)
 		})
-		res.status(200)
+		res.status(200).end()
 	 }
