@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import s from './Video.module.css'
 import { VideoProps } from "./Video.props";
 
@@ -7,7 +7,7 @@ import { VideoProps } from "./Video.props";
 
 
 export const Video = ({}: VideoProps): JSX.Element => {
-
+	const [first, setfirst] = useState<string | undefined>('')
 
 	const currentMonth: number = new Date().getMonth() + 1
 	let path = ''
@@ -28,13 +28,14 @@ export const Video = ({}: VideoProps): JSX.Element => {
 			break;
 	}
 	
+	console.log(path);
 	
 	
 
 	useEffect(() => {		
 		if (window.innerWidth <= 768 && window !== undefined ) {
-			path = '/autumn.mp4'
-			console.log(path);
+			setfirst('/winterMobail.mp4')
+			
 			
 		}
 	}, [])
@@ -42,7 +43,7 @@ export const Video = ({}: VideoProps): JSX.Element => {
 
   return (
     <>
-      <video className={s.bg} src={path} autoPlay muted loop />
+      <video className={s.bg} src={first ? first : path} autoPlay muted loop />
       {/* <video className={s.bg} src='https://www.youtube.com/watch?v=0VJba-kk0oo&list=PLsErSZfBtknanL2rj3-CQ6-HtONiqaQpo&index=3' />  */}
 		
 
