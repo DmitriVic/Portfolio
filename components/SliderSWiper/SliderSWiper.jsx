@@ -21,46 +21,46 @@ import Image from "next/image";
 
 
 export const SliderSWiper = () => {
-	
-	const works = ['работа 1', 'работа 2','работа 3']
+
+	const works = ['работа 1', 'работа 2', 'работа 3']
 	return (
-		
-			
-				<Swiper
-				
-						//   cssMode={true}
-						  navigation={true}
-						  pagination={{ clickable: true, }}
-						//   mousewheel={true}
-							keyboard={true}
-					
-						  modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-						  className={s.myswiper}
-						>
-				
-				{works.map((el, indx) => {
-					 return <SwiperSlide key={indx} className={s.swiperSlide}>
-					 <div className={s.slide}>
-						 <div className={s.title}>Название работы</div>
-						 <a href="">
+
+
+		<Swiper
+
+			//   cssMode={true}
+			navigation={true}
+			pagination={{ clickable: true, }}
+			//   mousewheel={true}
+			keyboard={true}
+
+			modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+			className={s.myswiper}
+		>
+
+			{works.map((el, indx) => {
+				return <SwiperSlide key={indx} className={s.swiperSlide}>
+					<div className={s.slide}>
+						<div className={s.title}>Название работы</div>
+						<a href="">
 							<Image
-							width={400}
-							height={300}
-							 className={s.image}
-							  src={images}
-													alt="" />
-						 </a>
-						 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis necessitatibus inventore sequi, atque dolore placeat repellat itaque molestiae, distinctio laborum magnam accusamus, assumenda rerum tempora minus nihil sit id?</p>
-					 </div>
-					 </SwiperSlide>
-				})}
-			
-				
-						</Swiper>
-					
-			
-		
-	 );
+								width={400}
+								height={300}
+								className={s.image}
+								src={images}
+								alt="" />
+						</a>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis necessitatibus inventore sequi, atque dolore placeat repellat itaque molestiae, distinctio laborum magnam accusamus, assumenda rerum tempora minus nihil sit id?</p>
+					</div>
+				</SwiperSlide>
+			})}
+
+
+		</Swiper>
+
+
+
+	);
 };
 
 
