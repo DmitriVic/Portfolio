@@ -25,7 +25,7 @@ export const SliderSWiper = () => {
 	const works = ['работа 1', 'работа 2','работа 3']
 	return (
 		
-			<div>
+			
 				<Swiper
 				
 						//   cssMode={true}
@@ -57,9 +57,8 @@ export const SliderSWiper = () => {
 			
 				
 						</Swiper>
-						{/* <div style={{'height': 200, 'width':200, 'background': 'black'}}></div> */}
-							{/* <button style={{'zIndex': 1000, 'height': 100}} onClick={()=>(swiper.navigation.nextEl())}>yf;vb vtyz</button> */}
-			</div>
+					
+			
 		
 	 );
 };

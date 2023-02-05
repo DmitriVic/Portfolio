@@ -1,3 +1,5 @@
+
+import { useEffect } from 'react';
 import s from './Video.module.css'
 import { VideoProps } from "./Video.props";
 
@@ -5,6 +7,8 @@ import { VideoProps } from "./Video.props";
 
 
 export const Video = ({}: VideoProps): JSX.Element => {
+
+
 	const currentMonth: number = new Date().getMonth() + 1
 	let path = ''
 	switch (currentMonth) {
@@ -23,6 +27,19 @@ export const Video = ({}: VideoProps): JSX.Element => {
 		default:
 			break;
 	}
+	
+	
+	
+
+	useEffect(() => {		
+		if (window.innerWidth <= 768 && window !== undefined ) {
+			path = '/autumn.mp4'
+			console.log(path);
+			
+		}
+	}, [])
+	
+
   return (
     <>
       <video className={s.bg} src={path} autoPlay muted loop />
