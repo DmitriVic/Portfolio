@@ -1,4 +1,4 @@
-
+//pass: 'M9Pu3wg8c21us3N8ZAkp',
 
 
 
@@ -9,6 +9,8 @@
 	export default function (req, res) {
 
 		require('dotenv').config()
+
+		
 		
 		let nodemailer = require('nodemailer')
 		const transporter = nodemailer.createTransport({
@@ -16,10 +18,11 @@
 			host: "smtp.mail.ru",
 			auth: {
 			user: 'mis_sham@mail.ru',
-			pass: 'M9Pu3wg8c21us3N8ZAkp',
+			pass: process.env.PASSWORD,
 			},
 			secure: true,
 			})
+			
 		const mailData = {
 		  from: 'mis_sham@mail.ru',
 		  to: 'mr_vlasov@mail.ru',

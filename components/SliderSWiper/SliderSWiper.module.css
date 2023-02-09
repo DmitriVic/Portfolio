@@ -30,10 +30,7 @@
 	align-items: center;
 	
  }
- .image{
-	
-	object-fit: cover;
- }
+ 
 
  .slide{
 	display:flex;
@@ -52,4 +49,11 @@
 	font-weight: 800;
 	margin-bottom: 30px;
 	
+ }
+
+ .image{
+	
+	object-fit: cover;
+	border: 4px ridge rgb(185, 187, 184) !important;
+
  }
