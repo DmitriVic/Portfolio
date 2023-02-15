@@ -6,6 +6,7 @@
 	right: 0;
 	transition: all 1s ease;
 }
+
 .Burger {
 	position: relative;
 	z-index: 1000;
@@ -17,6 +18,7 @@
 	
 	
 }
+
 @media (min-width:1224px) {
 	.Burger   {
 		display: none;

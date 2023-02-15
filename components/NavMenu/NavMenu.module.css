@@ -9,9 +9,9 @@
 	gap: 20px;
 	cursor:pointer; */
 }
+
 .block > span{
-	
-	color: rgb(20, 44, 4);
+	color: rgb(20 44 4);
 	
 }
 
@@ -27,6 +27,7 @@
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
+
 	/* display: grid;
 	grid-template-columns: repeat( 5, auto); */
 	color: var(--dark-green);

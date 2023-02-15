@@ -22,10 +22,13 @@
 	padding-right: 10px;
 	}
 }
+
 .wrapper :nth-child(4) {
 	justify-self: end;
 }
+
 /* justify-self: end; */
+
 /* grid-column: 3/4; */
 
 .active{
@@ -34,6 +37,7 @@
 	padding: 10px 0;
 	transition: background linear 0.8s;
 }
+
 .hidden{
 	opacity: 0;
 	pointer-events: none;

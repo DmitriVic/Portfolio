@@ -11,6 +11,7 @@
 	height: 530px;
 	position: relative;
   }
+
   /* .inputLabel {
 	text-align: left;
   }
@@ -22,7 +23,7 @@
 	border: 2px solid #5e9ca0; /* Add a border to the input field */
 	padding: 8px; /* Add some padding to the input field */
 	border-radius: 5px; /* Add rounded corners to the input field */
-	box-shadow: 2px 2px 5px #888888; /* Add a subtle shadow to the input field */
+	box-shadow: 2px 2px 5px #888; /* Add a subtle shadow to the input field */
 	transition: all 0.3s ease-in-out; /* Add a transition effect when hovering over the input field */
 	background: #F6F1ED;
 	width: 280px;
@@ -34,6 +35,7 @@
 	outline: none; /* Remove the default outline */
 	box-shadow: 2px 2px 5px #3e8e41; /* Change the shadow color when the input field is in focus */
 }
+
 .main select:focus{
 	outline: none;
 	border-color: #3e8e41;
@@ -44,12 +46,15 @@
 	border-color: #3e8e41;
 	outline: none;
 }
+
 .main textarea {
 	resize: none;
 }
+
 .submit {
 	cursor: pointer;
 }
+
 .submit:hover {
 	background: #b7f5b9 ;
 	
@@ -59,6 +64,7 @@
 	color: red;
 	height: 24px;
 }
+
 .main label{
 	font-size: 18px;
 	font-weight: 500;
@@ -69,6 +75,7 @@
 		color: yellow;
 	}
 }
+
 .catContainer{
 	position: absolute;
 	top: 0;
@@ -77,8 +84,8 @@
 	pointer-events: none;
 	transition: all 2.5s ease-in-out;
 }
+
 .cat{
-	
 	width: 200px;
 	height: 200px;
 	background: url('./cat.jpg');
@@ -86,11 +93,11 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 50%;
-	box-shadow: -1px 4px 53px 18px rgba(0,0,0,0.72);
--webkit-box-shadow: -1px 4px 53px 18px rgba(0,0,0,0.72);
--moz-box-shadow: -1px 4px 53px 18px rgba(0,0,0,0.72);
-	filter: drop-shadow(0 0 50px rgb(27, 26, 27));
+box-shadow: -1px 4px 53px 18px rgb(0 0 0 / 72%);
+box-shadow: -1px 4px 53px 18px rgb(0 0 0 / 72%);
+	filter: drop-shadow(0 0 50px rgb(27 26 27));
 }
+
 .visible{
 	opacity: 1;
 	transition: all 2.5s ease-in-out;
@@ -111,8 +118,9 @@
 	text-align:center;
 	z-index: 2;
  }
- .thought:before,
- .thought:after {
+
+ .thought::before,
+ .thought::after {
 	content:"";
 	background-color:#fff;
 	border-radius:50%;
@@ -120,14 +128,16 @@
 	position:absolute;
 	z-index:-1;
  }
- .thought:before {
+
+ .thought::before {
 	width:44px;
 	height:44px;
 	top:-12px;
 	left:28px;
 	box-shadow:-50px 30px 0 -12px #fff;
  }
- .thought:after {
+
+ .thought::after {
 	bottom:-10px;
 	right:26px;
 	width:30px;

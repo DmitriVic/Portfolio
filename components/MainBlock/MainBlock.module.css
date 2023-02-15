@@ -4,12 +4,14 @@
 	max-width: 920px;
 	height:calc(100vh - 72px);
 	height:100vh;
+
 	/* align-items: center; */
 	text-align: center;
 	padding-top: 250px;
 	font-weight: 500;
 	font-size: var(--title-fz);
 }
+
 /* @media (max-width:350px) {
 	.mainBlock{
 		max-width: 280px;

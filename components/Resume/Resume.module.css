@@ -7,6 +7,7 @@
 	font-weight: 400;
 	position: relative;
  }
+
  .resume h3::after{
 	content: '';
 	display: block;
@@ -29,14 +30,16 @@
 	padding: 0;
 	
 }
+
 .resume{
-	padding: 50px 0px;
+	padding: 50px 0;
 	display: grid;
 	justify-items: center;
 	color: #fff;
 	background-attachment: fixed;
 	position: relative;
 }
+
  .resume::after {
 	content: '';
 	position: absolute;
@@ -59,15 +62,16 @@
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	background: rgb(153, 132, 132);
+	background: rgb(153 132 132);
 	z-index: -3;
 }
+
 .skills{
-	
 	margin-top: 50px;
 	display: grid;
 	gap: 40px 100px;
 	grid-template-columns: 1fr 1fr;
+
 	/* justify-items: center; */
 }
 
@@ -82,7 +86,6 @@
  }
 
 .block {
-	
 	/* justify-items: center; */
 	
 }
@@ -95,11 +98,13 @@
 	
 	
 }
+
 .subtitle{
 	padding-bottom: 30px;
 	font-size: calc( (100vw - 320px)/(1920 - 320) * (30 - 24) + 24px);
-	color: rgb(226, 226, 40);
+	color: rgb(226 226 40);
 }
+
 .boxProgress {
 	width: 99%;
 	display: grid;
@@ -128,12 +133,15 @@
 		grid-template-columns: 1fr;
 		text-align: center;
 	}
+
 	.skills::before{
 		display: none;
 	 }
+
 	 .box {
 		font-size: 16px;
 	 }
+
 	 .progressWraper {
 		grid-template-columns: repeat(2, auto);
 	}
