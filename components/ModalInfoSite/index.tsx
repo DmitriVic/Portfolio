@@ -58,6 +58,9 @@ export const ModalInfoSite = ({}): JSX.Element => {
           Так же в проект был внедрен <strong>Typescript</strong> для наработки практических
           навыков.
         </li>
+        <li>
+		   Добавлена библиотека для анимации текста <strong>text-animations-react</strong>
+        </li>
       </ul>
       <div className={s.image1}>
         <Image
