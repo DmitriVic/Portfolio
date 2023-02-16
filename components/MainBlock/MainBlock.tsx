@@ -63,7 +63,7 @@ console.log(sizeT);
             type="popoutin"
             color='yellow'
             count="infinite"
-            duration={4} delay={0} grad1={""} grad2={""} grad3={""} grad4={""} layer1={""} layer2={""} layer3={""} layer4={""} top={0} right={0} bottom={0} left={0} styles={{}}
+            duration={4} delay={1} grad1={""} grad2={""} grad3={""} grad4={""} layer1={""} layer2={""} layer3={""} layer4={""} top={0} right={0} bottom={0} left={0} styles={{}}
           />
         }
       </div>
