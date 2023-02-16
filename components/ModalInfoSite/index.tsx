@@ -27,7 +27,10 @@ export const ModalInfoSite = ({}): JSX.Element => {
   return (
     <div className={s.container}>
       <h2 className={s.text}>Описание сайта</h2>
-      <h3>Данный сайт портфолио написан на Next.js</h3>
+      <h3>Данный сайт портфолио написан на Next.js
+			<br />
+			Сайт адаптивен под мобильные и различные устройства
+		</h3>
       <ul className={s.list}>
         <li className={s.subtext}>Использовались такие технологии как:</li>
         <li>

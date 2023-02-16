@@ -34,9 +34,7 @@ export const Video = ({}: VideoProps): JSX.Element => {
 
 	useEffect(() => {		
 		if (window.innerWidth <= 768 && window !== undefined ) {
-			setfirst('/winterMobail.mp4')
-			
-			
+			setfirst('/winterMobail.mp4')	
 		}
 	}, [])
 	
