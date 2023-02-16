@@ -49,13 +49,13 @@ export const MainBlock = ({ children }: MainBlockProps): JSX.Element => {
 		setSizeT(2)
 	 }
 	 
-  }, [stateText]);
+  }, [children, stateText]);
 console.log(sizeT);
 
   return (
     <div className={s.mainBlock}>
       {stateText}
-      <div className={cn({ [s.active]: bannerVisible })}>
+      <div className={cn({[s.active]: bannerVisible })}>
         { bannerVisible &&
           <TextAnim
             name="I need a job &#128512;"
