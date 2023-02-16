@@ -5,6 +5,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 
 html,
@@ -31,9 +32,7 @@ a {
 	text-decoration: none;
 }
 
-* {
-	box-sizing: border-box;
-}
+
 
 :root {
 	--dark-green: rgb(20 44 4);

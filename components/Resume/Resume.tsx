@@ -9,6 +9,8 @@ import { Progress } from '../Progress/Progress';
 
 
 export const Resume = ({ }): JSX.Element => {
+	const a =1;
+
 	const [start, setStart] = useState(false)
 
 	//const ProgressHeight = useRef<HTMLDivElement>(null)
@@ -43,7 +45,7 @@ useEffect(() => {
 				<div className={s.block}>
 					<h4 className={s.subtitle}>Образование</h4>
 					<div className={s.box}>
-						Курсы Сбер университет
+						Курсы Сбер университет{a}
 						<br />
 						frontend разработчик
 						<br />
@@ -78,7 +80,9 @@ useEffect(() => {
 						<br /><br />
 						Инструменты:
 						<br />
-						VScode,Git,Figma,Photoshop,Webpack, Gulp,Git,Postman,npm,yarn.
+						VScode, Git, Figma, ESLint, Stylelint, Photoshop, Webpack, Gulp,
+						Postman, npm, yarn.
+						
 					</div>
 				</div>
 				<div className={s.block}>

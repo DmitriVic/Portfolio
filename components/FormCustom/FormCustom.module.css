@@ -47,6 +47,7 @@
 	outline: none;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .main textarea {
 	resize: none;
 }
@@ -93,7 +94,6 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 50%;
-box-shadow: -1px 4px 53px 18px rgb(0 0 0 / 72%);
 box-shadow: -1px 4px 53px 18px rgb(0 0 0 / 72%);
 	filter: drop-shadow(0 0 50px rgb(27 26 27));
 }

@@ -51,7 +51,7 @@ export const ModalInfoSite = ({}): JSX.Element => {
 
         <li>
           <strong>Сss.modules, Wedpack, ESlint</strong> шли из коробки и также были задействованы
-          в коде
+          в коде. Был добавлен <strong>Stylelint</strong> для приведения <strong>CSS</strong> к единому стилю.
         </li>
 
         <li>

@@ -1,6 +1,7 @@
 //pass: 'M9Pu3wg8c21us3N8ZAkp',
 
-
+require('dotenv').config()
+		console.log(process.env)
 
 
  
@@ -8,8 +9,7 @@
 	// eslint-disable-next-line import/no-anonymous-default-export
 	export default function (req, res) {
 
-		require('dotenv').config()
-
+		
 		
 		
 		let nodemailer = require('nodemailer')
