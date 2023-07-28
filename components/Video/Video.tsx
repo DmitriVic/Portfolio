@@ -29,6 +29,7 @@ export const Video = ({}: VideoProps): JSX.Element => {
 	}
 	
 	console.log(path);
+	console.log('2');
 	
 	
 
